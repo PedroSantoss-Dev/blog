@@ -1,12 +1,14 @@
+import { BrowserRouter } from "react-router-dom";
 import { Navbar } from "./shared/components/navbar"
+import { Router } from "./routes";
 
 
 const App = () => {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Navbar/>
-      
-    </div>
+      <Router/>
+    </BrowserRouter>
   )
 }
 
