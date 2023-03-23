@@ -23,6 +23,7 @@ export const Home = () => {
             post?.map((item, index) => (
                 <Post
                 key={index}
+                userId={item.userId}
                 id = {item.id}
                 title = {item.title}
                 body = {item.body}
