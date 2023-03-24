@@ -4,6 +4,7 @@ import { IPost } from "../../@types/indes";
 import api from "../../shared/service/api";
 
 import * as S  from "./styled";
+import { Banner } from "../../shared/components/banner";
 
 export const Home = () => {
     const [post, setPost] = useState<IPost[]>()
@@ -19,6 +20,7 @@ export const Home = () => {
     },[])
     return(
         <S.Main>
+            <Banner/>
         {
             post?.map((item, index) => (
                 <Post
