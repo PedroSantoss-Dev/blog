@@ -1,11 +1,13 @@
 import { IPost } from "../../../@types/indes";
 import * as S from "./styled";
 
-export const Post = ({title,body}:IPost) => {
+export const Post = ({title,body,id}:IPost) => {
     return(
-        <S.Post>
+        <S.Posts  to={`posts/${id}`}>
+        
             <S.Title>{title}</S.Title>
             <S.Body>{body}</S.Body>
-        </S.Post>
+        
+        </S.Posts>
     )
 }
