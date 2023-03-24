@@ -22,8 +22,6 @@ margin: 1rem;
 export const avatar = styled.img`
 border-radius: 50%;
 align-items: center;
-display: flex;
-justify-content: center;
 height: 2.4rem;
 width: 2.5rem;
 margin-right: 0.8rem;
