@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
-export const Card = styled.article`
+export const Card = styled(Link)`
 width: 18rem;
 height: 12rem;
 display: flex;
@@ -14,6 +15,8 @@ margin:  1.4rem;
 background-color: #FFF;
 position: relative;
 bottom: 7rem;
+text-decoration: none;
+color:inherit;
 `;
 export const Avatar = styled.img`
 border-radius: 50%;

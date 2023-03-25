@@ -17,9 +17,8 @@ export const CardUser = ({id,name,username,email,phone,website}:IUser) => {
        Avatar()
    },[])
     return(
-        <S.Card>
+        <S.Card to={`user/${id}`}>
             <S.Avatar src={avatar.message} />
-
             <S.Name>{name}</S.Name>
             <S.Email>{email}</S.Email>
         </S.Card>
