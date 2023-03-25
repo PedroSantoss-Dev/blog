@@ -15,4 +15,5 @@ background: #FF6600;
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 2.5rem;
 `;

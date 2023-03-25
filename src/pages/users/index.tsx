@@ -3,6 +3,7 @@ import { IUser } from "../../@types/indes";
 import api from "../../shared/service/api";
 import { CardUser } from "../../shared/components/profiles";
 import * as S from "./styled";
+import { Menu } from "../../shared/components/bar";
 
 
 export const Users = () => {
@@ -20,7 +21,9 @@ export const Users = () => {
     },[])
     return(
         <S.Users>
-            <S.Baanner></S.Baanner>
+            <S.Baanner>
+                <Menu/>
+            </S.Baanner>
             {
                 user.map((item, index) => (
                     <CardUser
