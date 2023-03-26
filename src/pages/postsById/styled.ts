@@ -10,6 +10,7 @@ export const Posts = styled.article`
 width:60%;
 display: flex;
 flex-direction: column;
+background: rgba(255, 255, 255, 0.534);
 
 `;
 export const Comments = styled.article`

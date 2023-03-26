@@ -30,6 +30,7 @@ export const Users = () => {
                     key={index}
                     id={item.id}
                     name={item.name}
+                    address={item.address}
                     username={item.username}
                     email={item.email}
                     phone={item.name}

@@ -6,6 +6,9 @@ width: 90%;
 display: flex;
 flex-direction: column;
 margin:0.9rem;
+background: rgba(255, 255, 255, 0.534);
+border-radius: 0.4rem;
+box-shadow: #FF6600 0px 1px 3px, #FF6600 0px 1px 2px;
 `;
 export const Box = styled.div`
 width: 90%;

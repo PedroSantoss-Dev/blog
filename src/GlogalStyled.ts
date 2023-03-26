@@ -12,5 +12,10 @@ export const GlobalStyle = createGlobalStyle`
 body{
   width:100vw;
   height:100%;
+  background: url('https://i.pinimg.com/originals/26/92/9f/26929f59519142df6502d1cfb27c28d6.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  background-attachment: fixed;
 }
 `;

@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 export const Container = styled.section`
 width: 100%;
-height: 100vh;
+height: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: #F8F8F8;
+background-color: transparent;
 `;
 export const avatar = styled.img`
 border-radius: 50%;

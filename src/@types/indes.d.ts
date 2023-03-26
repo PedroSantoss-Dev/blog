@@ -1,3 +1,5 @@
+import { ReactNode } from "react"
+
 export interface IPost{
 userId: number    
 id: number
@@ -19,10 +21,43 @@ export interface IAvatar{
 };
 export interface IUser{
     id: number
-    name: string
+    name: string 
     username: string
     email: string
+    address: {
+        street: string
+        suite: string
+        city: string
+        zipcode: string
+        geo :{
+            lat: string
+            lng: string
+        }
+    }
     phone: string
     website: string
+    company: {
+        name:string
+        catchPhrase: string
+        bs: string
+    }
+}
+
+export interface ITabBar{
+    isActive: boolean
+    children: ReactNode
+    onClick: () => void
+}
+export interface IProps{
+    userId: number
+    street: string
+    suite: string
+    city: string
+    zipcode: string
+    lat: string
+    lng: string
+    name:string
+    catchPhrase: string
+    bs: string
 }
 

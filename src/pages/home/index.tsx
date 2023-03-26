@@ -2,7 +2,6 @@ import {useState, useEffect } from "react";
 import { Post } from "../../shared/components/post"
 import { IPost } from "../../@types/indes";
 import api from "../../shared/service/api";
-
 import * as S  from "./styled";
 import { Banner } from "../../shared/components/banner";
 

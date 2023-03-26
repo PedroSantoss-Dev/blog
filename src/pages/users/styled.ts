@@ -6,12 +6,11 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-background-color: #F8F8F8;
 `;
 export const Baanner = styled.div`
 width: 100%;
 height: 25rem;
-background: #FF6600;
+background: rgba(255, 255, 255, 0.534);
 display: flex;
 justify-content: space-between;
 align-items: center;

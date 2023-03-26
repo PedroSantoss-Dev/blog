@@ -31,8 +31,8 @@ export const PostsById = () => {
     return(
         <S.Container>
             <S.Posts>
-        <S.Title>{posts?.title}</S.Title>
-        <S.Body>{posts?.body}</S.Body>
+               <S.Title>{posts?.title}</S.Title>
+               <S.Body>{posts?.body}</S.Body>
             </S.Posts>
             <S.Comments>
                 {comments?.map((item, index) => (
