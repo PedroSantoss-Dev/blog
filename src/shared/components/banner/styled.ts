@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { FaBlog } from "react-icons/fa";
+
 
 export const Container = styled.section`
 width: 100%;
@@ -10,11 +12,9 @@ align-items: center;
 padding: 2rem;
 `;
 
-export const Banner = styled.img`
-width: 25rem;
-height: 15rem;
-margin: 0  50px 170px 0;
-opacity: 0.8;
+export const Banner = styled(FaBlog)`
+height: 6rem;
+color: black;
 
 `;
 export const Title = styled.h1`

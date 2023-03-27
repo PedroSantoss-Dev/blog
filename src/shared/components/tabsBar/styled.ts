@@ -24,6 +24,10 @@ border-radius : 0.5rem ;
 box-shadow: #FF6600 0px 1px 3px, #FF6600 0px 1px 2px;
 margin: 1.5rem;
 padding: 0.9rem;
+@media (max-width: 600px) {
+    width:23rem;
+    height:6.5rem;
+}
 `;
 export const Container = styled.article`
 width: 20rem;
@@ -45,10 +49,12 @@ margin:0.9rem;
 export const Body = styled.p`
 font-size: 0.8em;
 margin:0.4rem;
-
 `;
 export const Text = styled.p`
 font-size: 0.6em;
+@media (max-width: 600px) {
+font-size: 0.7em; 
+}
 `;
 export const Btn = styled.button`
 height:3rem;

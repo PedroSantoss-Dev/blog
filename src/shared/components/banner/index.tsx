@@ -6,7 +6,6 @@ export const Banner = () => {
     return(
         <S.Container>
             <Menu/>
-            <S.Banner src={banner}/>
         </S.Container>
     )
 }

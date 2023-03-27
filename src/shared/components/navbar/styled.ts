@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FaBloggerB } from "react-icons/fa";
+import { FaBlog } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const Header = styled.header`
@@ -14,7 +14,7 @@ export const Nav = styled(Link)`
 text-decoration: none;
 color:inherit;
 `;
-export const Logo = styled(FaBloggerB)`
+export const Logo = styled(FaBlog)`
 height: 6rem;
 color: black;
 margin-left: 1rem;

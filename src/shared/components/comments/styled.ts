@@ -9,7 +9,12 @@ margin:0.9rem;
 background: rgba(255, 255, 255, 0.534);
 border-radius: 0.4rem;
 box-shadow: #FF6600 0px 1px 3px, #FF6600 0px 1px 2px;
+@media (max-width: 600px) {
+   width: 22.5rem;
+   height:9.5rem;
+}
 `;
+
 export const Box = styled.div`
 width: 90%;
 display: flex;
@@ -21,6 +26,7 @@ margin: 1rem;
     display: flex;
     flex-direction: column;
 }
+
 `;
 export const avatar = styled.img`
 border-radius: 50%;

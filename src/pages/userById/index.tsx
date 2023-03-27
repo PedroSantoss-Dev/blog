@@ -34,6 +34,7 @@ export const UserById = () => {
             <h1>{user?.username}</h1>
             <p>{user?.email}</p>
             <p>{user?.phone}</p>
+            <p>{user?.website}</p>
              <TabBar
              userId={user?.id}
              city={user?.address.city}
