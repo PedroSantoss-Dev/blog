@@ -34,6 +34,7 @@ export const Users = () => {
                     username={item.username}
                     email={item.email}
                     phone={item.name}
+                    company={item.company}
                     website={item.website}
                     />
                 ))
