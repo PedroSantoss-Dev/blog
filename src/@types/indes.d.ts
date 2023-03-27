@@ -19,30 +19,35 @@ export interface IAvatar{
     message: string
     status: string
 };
-export interface IUser{
-    id: number
-    name: string 
-    username: string
-    email: string
+export interface IUser {
+    id: number;
+    name: string;
+    username: string;
+    email: string;
     address: {
-        street: string
-        suite: string
-        city: string
-        zipcode: string
-        geo :{
-            lat: string
-            lng: string
-        }
-    }
-    phone: string
-    website: string
+      street: string;
+      suite: string;
+      city: string;
+      zipcode: string;
+      geo: {
+        lat: string;
+        lng: string;
+      };
+    };
+    phone: string;
+    website: string;
     company: {
-        name:string
-        catchPhrase: string
-        bs: string
-    }
-}
-
+      name: string;
+      catchPhrase: string;
+      bs: string;
+    };
+  }
+  
+  export interface IUserWithKey extends Omit<IUser, 'id'> {
+    key: number;
+    id: IUser['id'];
+  }
+  
 export interface ITabBar{
     isActive: boolean
     children: ReactNode
