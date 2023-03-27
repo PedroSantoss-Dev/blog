@@ -38,7 +38,30 @@ export const UserById = () => {
   const getUserById = async () => {
     try {
       const response = await api.get(`users/${id}`);
-      setUser(response.data);
+      setUser({
+        key: response.data.id,
+        id: response.data.id,
+        name: response.data.name,
+        username: response.data.username,
+        email: response.data.email,
+        address: {
+          street: response.data.address.street,
+          suite: response.data.address.suite,
+          city: response.data.address.city,
+          zipcode: response.data.address.zipcode,
+          geo: {
+            lat: response.data.address.geo.lat,
+            lng: response.data.address.geo.lng,
+          },
+        },
+        phone: response.data.phone,
+        website: response.data.website,
+        company: {
+          name: response.data.company.name,
+          catchPhrase: response.data.company.catchPhrase,
+          bs: response.data.company.bs,
+        },
+      });
     } catch (error) {
       console.log(error);
     }
