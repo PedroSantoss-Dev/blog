@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import api from "../../shared/service/api";
 import * as S from "./styled";
 import { useParams } from "react-router-dom";
-import { IUser } from "../../@types/indes";
+import { IUser, IUserWithKey } from "../../@types/indes";
 import { TabBar } from "../../shared/components/tabsBar";
 
 
 export const UserById = () => {
-  const [user, setUser] = useState<IUser>({
+  const [user, setUser] = useState<IUserWithKey>({
+    key:0,
     id: 0,
     name: '',
     username: '',
