@@ -43,9 +43,8 @@ export interface IUser {
     };
   }
   
-  export interface IUserWithKey extends Omit<IUser, 'id'> {
+  export interface IUserWithKey extends IUser {
     key: number;
-    id: IUser['id'];
   }
   
 export interface ITabBar{
